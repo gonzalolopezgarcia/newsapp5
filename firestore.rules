@@ -1,0 +1,19 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Matchea cualquier documento en la colección 'articles'
+    match /articles/{article} {
+      // Permite leer a cualquier usuario
+      allow read: if true;
+
+      // Permite crear a cualquier usuario
+      allow create: if true;
+
+      // No permite eliminar artículos
+      allow delete: if false;
+
+      // No permite actualizar artículos
+      allow update: if false;
+    }
+  }
+}

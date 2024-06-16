@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "newsapp5-d0ca5"
+  },
+  "dataconnectEmulatorConfig": {
+    "postgres": {
+      "localConnectionString": "postgresql://localhost:5432?sslmode=disable"
+    }
+  }
+}
